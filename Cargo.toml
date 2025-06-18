@@ -1,0 +1,39 @@
+[package]
+name = "arch-health_"
+version = "0.1.0"
+edition = "2024"
+authors = ["Your Name <you@example.com>"]
+description = "Modular Arch Linux system health checker"
+license = "MIT"
+repository = "https://github.com/yourusername/arch-health_"
+
+[dependencies]
+# CLI interface
+clap = { version = "4.5", features = ["derive"] }
+
+# Output formatting and terminal
+crossterm = "0.27"         # Colourful output
+indicatif = "0.17"         # Spinners and progress bars
+
+# Logging
+log = "0.4"
+env_logger = "0.10"
+
+# Configuration and serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+dirs = "5.0"               # For locating ~/.config/...
+
+# Regex for parsing CLI output
+regex = "1.10"
+which = "8.0.0"
+
+# Optional features
+[features]
+default = []
+audit = []  # You can enable this with: cargo run --features audit
+
+[[bin]]
+name = "arch-health_"
+path = "src/main.rs"
