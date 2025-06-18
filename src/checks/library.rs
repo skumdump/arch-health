@@ -131,6 +131,10 @@ pub fn run_check(format: &str) {
     eprintln!("╰─────────────────────────────────────────────╯");
     eprintln!("⏱️  Completed in {:.2}s", elapsed.as_secs_f64());
 
+    // Clear any spinner artifacts
+    eprint!("\r\x1b[2K");
+    io::stderr().flush().unwrap();
+
     if format == "text" {
         let errs = errors.lock().unwrap();
         eprintln!("\n╭─────────────────────────────────────────────╮");
