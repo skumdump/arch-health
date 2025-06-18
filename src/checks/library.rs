@@ -68,15 +68,17 @@ pub fn run_check(format: &str) {
     io::stderr().flush().unwrap();
 
     let mut files = Vec::new();
+    let mut dot_count = 0;
     for dir in &dirs {
         if let Ok(entries) = fs::read_dir(dir) {
             for entry in entries.flatten() {
                 let path = entry.path();
                 if path.is_file() && is_elf(&path) {
                     files.push(path);
-                    if files.len() % 50 == 0 {
+                    if files.len() % 200 == 0 && dot_count < 20 {
                         eprint!(".");
                         io::stderr().flush().unwrap();
+                        dot_count += 1;
                     }
                 }
             }
