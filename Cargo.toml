@@ -28,6 +28,7 @@ dirs = "5.0"               # For locating ~/.config/...
 # Regex for parsing CLI output
 regex = "1.10"
 which = "8.0.0"
+rayon = "1.10.0"
 
 # Optional features
 [features]

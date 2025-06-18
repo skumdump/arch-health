@@ -1,6 +1,5 @@
 use serde::Deserialize;
 use std::fs;
-use std::path::PathBuf;
 use dirs::config_dir;
 
 #[derive(Deserialize, Debug)]

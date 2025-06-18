@@ -4,7 +4,7 @@ mod config;
 
 use clap::Parser;
 use config::load_config;
-use output::{formatter, logger};
+use output::formatter;
 use output::progress::start_spinner;
 
 #[derive(Parser, Debug)]
