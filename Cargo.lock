@@ -62,7 +62,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "arch-health_"
+name = "arch-health"
 version = "0.1.0"
 dependencies = [
  "clap",

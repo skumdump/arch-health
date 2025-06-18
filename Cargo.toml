@@ -1,5 +1,5 @@
 [package]
-name = "arch-health_"
+name = "arch-health"
 version = "0.1.0"
 edition = "2024"
 authors = ["Skum"]
@@ -36,5 +36,5 @@ default = []
 audit = []  # You can enable this with: cargo run --features audit
 
 [[bin]]
-name = "arch-health_"
+name = "arch-health"
 path = "src/main.rs"
