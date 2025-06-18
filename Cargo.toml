@@ -2,7 +2,7 @@
 name = "arch-health_"
 version = "0.1.0"
 edition = "2024"
-authors = ["Your Name <you@example.com>"]
+authors = ["Skum"]
 description = "Modular Arch Linux system health checker"
 license = "MIT"
 repository = "https://github.com/yourusername/arch-health_"
