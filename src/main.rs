@@ -32,8 +32,8 @@ fn main() {
 
     if use_library {
         let pb = start_spinner("Checking shared libraries with ldd...");
+        pb.finish_and_clear(); // Clear the spinner first
         checks::library::run_check(&format);
-        pb.finish_with_message("✅ Done");
     }
 
     if use_pacman {
