@@ -5,7 +5,7 @@ edition = "2024"
 authors = ["Skum"]
 description = "Modular Arch Linux system health checker"
 license = "MIT"
-repository = "https://github.com/yourusername/arch-health_"
+repository = "https://github.com/yourusername/arch-health"
 
 [dependencies]
 # CLI interface

@@ -8,7 +8,7 @@ use output::formatter;
 use output::progress::start_spinner;
 
 #[derive(Parser, Debug)]
-#[command(name = "arch-health_")]
+#[command(name = "arch-health")]
 struct Cli {
     #[arg(short, long, default_value = "text")]
     format: String,
